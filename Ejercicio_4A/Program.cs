@@ -8,9 +8,7 @@ namespace Ejercicio_4A
         {
             int weight = int.Parse(Console.ReadLine());
             if (weight > 2 && (weight & 1) == 0)
-            {
                 Console.WriteLine("YES");
-            }
             else
                 Console.WriteLine("NO");
         }
