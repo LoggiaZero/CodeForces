@@ -10,8 +10,9 @@ namespace Ejercicio_158A
         {
             string[] data = Console.ReadLine().Split(' ');
             int k = int.Parse(data[1]);
-            List<int> score = Array.ConvertAll<string, int>(Console.ReadLine().Split(' '), int.Parse).ToList();
-            Console.WriteLine(score[0]>k? score.Count(item => item > k):score.Count(item => item == k));
+            List<int> scores = Array.ConvertAll<string, int>(Console.ReadLine().Split(' '), int.Parse).ToList();
+            int minscore = scores[k-1];
+            Console.WriteLine(scores.Count(item => item >= minscore && item > 0));
         }
     }
 }
