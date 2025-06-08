@@ -12,7 +12,6 @@ namespace Ejercicio_105
             int resultado = (n / 15)*10 + increments[n % 15];
             Console.WriteLine(resultado);
             Console.ReadLine();
-            
         }
     }
 }
